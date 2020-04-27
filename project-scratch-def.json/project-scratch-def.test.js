@@ -27,12 +27,12 @@ describe("project-stract-def.json", () => {
     "template pilot property option is valid",
     testFile("./examples/with-template.json", true)
   );
-  test(
-    "features not in enum are valid",
-    testFile("./examples/features-not-in-schema.json", true)
-  );
-  test(
-    "with orgPreferenceSetting is invalid",
-    testFile("./examples/with-orgPreferenceSetting.json", false)
-  );
+  // test(
+  //   "features not in enum are valid",
+  //   testFile("./examples/features-not-in-schema.json", true)
+  // );
+  // test(
+  //   "with orgPreferenceSetting is invalid",
+  //   testFile("./examples/with-orgPreferenceSetting.json", false)
+  // );
 });
