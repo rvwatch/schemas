@@ -14,7 +14,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12.4.0
-      - run: npm test
       - name: Publish to npm
         uses: pascalgn/npm-publish-action@1.2.0
         with: # All of theses inputs are optional
