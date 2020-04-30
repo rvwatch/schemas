@@ -2,16 +2,16 @@ name: npm-publish
 on:
   push:
     branches:
-      - viera/actions # Change this to your default branch
+      - schemas/tree/viera/actions # Change this to your default branch
 jobs:
   npm-publish:
     name: npm-publish
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
       - name: Set up Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 12.4.0
       - name: Publish to npm
